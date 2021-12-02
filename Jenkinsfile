@@ -32,6 +32,12 @@ pipeline {
 
          }
       }
+         // clean
+        stage('Clean'){
+          steps{
+              sh 'docker rm -f $CONTAINER_NAME'
+          }
+      }
       // Docker stuff build and deploy
 
       stage('Docker Build') {
