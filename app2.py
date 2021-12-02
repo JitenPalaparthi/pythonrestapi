@@ -4,4 +4,4 @@ print("Array is :",arr)
 
 res = arr[::-1] #reversing using list slicing
 print("Resultant new reversed array:",res)
-#test is pending 4
+#test is pending 5
