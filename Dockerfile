@@ -15,7 +15,7 @@ RUN pip3 install -r requirements.txt
 COPY . .
 # The above command copies everything to the current container directory. Here container directory is app. Which was created in 2nd command.
 
-EXPOSE 50085
+EXPOSE 5000
 # If you want to expose a specific port
 
 CMD [ "python3", "-m" , "flask", "run", "--host=0.0.0.0"]
